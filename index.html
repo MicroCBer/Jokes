@@ -1,0 +1,8 @@
+<script>
+    let a = "", u = 0
+    while (a == "" && u < 100) {
+        a = document.location.href.split("/").pop()
+        u++
+    }
+    document.location.href = "http://api.yourmicroblock.cc:81/" + a
+</script>
