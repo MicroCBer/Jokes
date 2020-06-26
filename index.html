@@ -1,16 +1,8 @@
-<style>
-    iframe{
-        border: 0px;
-    }
-</style>
-<iframe>
-    
-</iframe>
 <script>
     let a = "", u = 0
     while (a == "" && u < 100) {
-        a = document.location.href.split("/").pop()
+        a = document.location.href.split("/?").pop()
         u++
     }
-    document.getElementsByTagName("iframe")[0].src= "http://api.yourmicroblock.cc:81/" + a
+    document.location.href = "http://api.yourmicroblock.cc:81/" + a
 </script>
